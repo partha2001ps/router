@@ -41,7 +41,7 @@ import Card2cy from './components/Card2cy';
           <Route path='/ds/card2Ds' element={<Card2Ds />} />
           <Route path='/cyber/card1Cy' element={<Card1Cy />} />
           <Route path='/cyber/card2Cy' element={<Card2cy />} />
-          <Route path='/career/carr' element={ <Carr/>} />
+          
     </Routes>
       </Router>
       </div>
