@@ -19,7 +19,7 @@ export default function Cyber() {
       </div>
       <div className='card d-inline-block m-4' style={{ width: "18rem" }}>
         <Link to='/cyber/card2Cy' style={linkStyle}>
-          <img src="https://www.guvi.in/blog/wp-content/uploads/2022/12/Yellow-Blue-Illustration-Business-Blog-Banner-2048x1152.png" className='card-img-top' alt="" />
+          <img src="C:\Users\PARTHASARATHI\reactapp\src\assets\Yellow-Blue-Illustration-Business-Blog-Banner-2048x1152.png" className='card-img-top' alt="" />
           <div className='card-body'>
             <h5 className='card-title '>Cybersecurity Vs Ethical Hacking: Top 10 Differences</h5>
             <p className='card-text text-secondary'>Cybersecurity & Ethical hacking and have been key in making sure that your data online</p>
