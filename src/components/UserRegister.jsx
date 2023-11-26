@@ -1,7 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-function UserRegister({handleRegister,registerData,setRegisterData,mgs}) {
+function UserRegister({  registerData, setRegisterData, mgs,setMgs }) {
+    const navigate = useNavigate();
+    setMgs('')
+    const handleRegister = async (e) => {
+      e.preventDefault();
+  
+      const data = {
+        username: registerData.username,
+        name: registerData.name,
+        password: registerData.password
+      };
+  
+      try {
+        const res = await axios.post('https://password-reset-backend-gaqe.onrender.com/api/user', data);
+        setMgs('')
+        console.log('successfully created');
+        setRegisterData({ username: '', name: '', password: '' });
+        const info = res.data;
+        setMgs(`successfully user created`);
+        navigate('/');
+      } catch (error) {
+        console.log(error);
+      }
+    };
+  
   return (
     <div className='container'>
       <form onSubmit={handleRegister} className='inside'>
@@ -41,7 +66,8 @@ function UserRegister({handleRegister,registerData,setRegisterData,mgs}) {
       </div>
       <button type="submit">
         REGISTER
-        </button>
+              </button>
+              <p>{mgs}</p>
         <div><Link to='/'>Login</Link></div>
     </form>
   </div>

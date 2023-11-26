@@ -2,9 +2,8 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-function ResetPassword() {
+function ResetPassword({res_mgs,setRes_Mgs}) {
   const [email, setEmail] = useState('');
-  const [res_mgs, setRes_Mgs] = useState('');
   const [otp, setOtp] = useState('');
   const [newPassword, setNewpassword] = useState('');
   const navigate = useNavigate();
@@ -69,7 +68,7 @@ function ResetPassword() {
       {res_mgs === 'Reset email sent successfully' ? (
         <div>
           <div>
-            <label htmlFor="newPassword">Enter OTP</label>
+            <label htmlFor="newPassword">Enter OTP</label><br />
             <input
               type="password"
               value={otp}
@@ -79,7 +78,7 @@ function ResetPassword() {
               required
             />
           </div>
-          <label htmlFor="">New Password</label>
+          <label htmlFor="">New Password</label><br />
           <input
             type="password"
             value={newPassword.password}
@@ -89,7 +88,6 @@ function ResetPassword() {
             required
           />
           <button onClick={changeNewPassword}>submit</button>
-          <p>{res_mgs}</p>
         </div>
       ) : null}<Link to='/'>Login</Link></div>
     </div>

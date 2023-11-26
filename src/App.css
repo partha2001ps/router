@@ -1,3 +1,5 @@
+/* Your existing styles */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -5,7 +7,6 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-  
   }
   
   .inside {
@@ -22,7 +23,7 @@
   }
   
   h2 {
-    color:rgb(63, 10, 50);
+    color: rgb(63, 10, 50);
     font-size: 24px;
     margin-bottom: 20px;
   }
@@ -38,6 +39,7 @@
     font-size: large;
     font-weight: 400;
   }
+  
   p {
     color: #ff0000;
     margin-top: 10px;
@@ -76,6 +78,7 @@
   div a:hover {
     text-decoration: underline;
   }
+  
   div a:last-child {
     margin-top: 20px;
     display: block;
@@ -87,5 +90,14 @@
   div a:last-child:hover {
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 600px) {
+    .inside {
+      width: 90%; 
+    }
   
+    input {
+      width: 100%;
+    }
+  }
   

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "../App.css"
-function UserLogin({ handlePassword, loginData, setLoginData, mgs }) {
-
+function UserLogin({ handlePassword, loginData, setLoginData, mgs,setRes_Mgs,res_mgs}) {
+  
   return (
     <div className='container'> 
    <div className='inside'> <h2>Login</h2>
@@ -38,7 +38,7 @@ function UserLogin({ handlePassword, loginData, setLoginData, mgs }) {
        </div>
     </form></div>
       <div>
-<p>{mgs}</p>
+      <p>{res_mgs ? res_mgs : mgs}</p>
 <Link to='/reset_password'>Forget Password</Link>
 </div></div>
   </div>
