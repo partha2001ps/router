@@ -5,7 +5,7 @@ export default function Card1Cy() {
       <div><h1>Cybersecurity Vs Ethical Hacking: Top 10 Differences</h1>
  <div className="elementor-widget-container">
 <img  src="C:\Users\PARTHASARATHI\reactapp\src\assets\Yellow-Blue-Illustration-Business-Blog-Banner-2048x1152.png" className="m-4 elementor-animation-float attachment-full size-full wp-image-15952" alt="" loading="lazy"  sizes="(max-width: 2240px) 100vw, 2240px"/> </div>
-      <p>Cybersecurity & Ethical hacking and have been key in making sure that your data online is secure, users are authenticated & your data and privacy concerns are all kept safe.
+      <p>Cybersecurity & Ethical hacking and have been key in making sure that your data online is secure, users are authenticated & your data and privacy concerns are all kept safe
 
 Is there a difference between cybersecurity and ethical hacking, if yes what is the difference? Let’s find out!
 
